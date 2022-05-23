@@ -1,5 +1,9 @@
 # Lane_Line_Detection
 
+## Important Note
+
+-Testing on image, video (with and without debug mode) results are already in the results video
+
 ## Dependencies
 > Note: `Python 3 & pip package installer` are required.
 - OpenCV
