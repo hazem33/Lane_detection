@@ -18,4 +18,5 @@ sudo apt install python-numpy
 2-Enter 0 for image, 1 for video
 ---
 3-Enter image/video complete path
+---
 
