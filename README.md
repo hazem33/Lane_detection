@@ -13,10 +13,12 @@ sudo apt install python-numpy
 
 
 ## Steps to Run
-1-Enter 0 for normal mode, 1 for debugging mode
+1-Run the main file
 
-2-Enter 0 for image, 1 for video
+2-Enter 0 for normal mode, 1 for debugging mode
 
-3-Enter image/video complete path
+3-Enter 0 for image, 1 for video
+
+4-Enter image/video complete path
 
 
