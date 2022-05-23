@@ -87,11 +87,10 @@ def lane_finding_pipeline(img,isDebug):
         out_img=cv2.resize(out_img,(0,0),None,2/3,1)
         temp_img=cv2.vconcat([binary_thresh,binary_warped,new_warp])
         concatenated_out=cv2.hconcat([out_img, temp_img])
-        #cv2.imshow("binary_thresh",binary_thresh)
-        #cv2.imshow("binary_wraped",binary_warped)
-        #cv2.waitKey(0)
+
 
 
         return concatenated_out
     else:
         return out_img
+#in case of normal mode, show the final result only, in case of debugging mode show the stages of the output beside the final result     
