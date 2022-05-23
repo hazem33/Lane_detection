@@ -9,7 +9,8 @@ import globals
 import sys
 
 globals.init()
-
+deb=input("please enter 0 for final result, 1 for debugging mode\n")
+deb=int(deb)
 workMode=input("please enter 0 for photo, 1 for video\n")
 workMode=int(workMode)
 ##selecting work mode photo=1 or video=0
@@ -47,7 +48,7 @@ if workMode ==1:
         ret,frame=cap.read()
         if ret==1:
             #Call the pipeline in a single the captured frame from the video
-            out_frame=pipeline.lane_finding_pipeline(frame,0)
+            out_frame=pipeline.lane_finding_pipeline(frame,deb)
             #out.write(out_frame)
             #print("Producing output video, ",int((i/frame_count)*100),"% completed.", end='\r')
 
@@ -67,7 +68,7 @@ elif workMode ==0:
 
 
     in_photo=cv2.imread(locationPhoto)
-    out_photo=pipeline.lane_finding_pipeline(in_photo,1)
+    out_photo=pipeline.lane_finding_pipeline(in_photo,deb)
     cv2.imshow("output",out_photo)
     cv2.waitKey(0)
 
