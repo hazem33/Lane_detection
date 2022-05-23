@@ -4,6 +4,8 @@
 
 -Testing results on image, video (with and without debug mode) are already in the results video
 
+-Testing data are already in test folder, so you can copy the path of test video/image directly from them
+
 ## Dependencies
 > Note: `Python 3 & pip package installer` are required.
 - OpenCV
